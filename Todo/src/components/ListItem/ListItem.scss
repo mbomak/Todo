@@ -1,0 +1,33 @@
+@import 'styles/_helpers';
+
+.list-item {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0 5px 10px;
+    background-color: $col-2;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: border 0.3s;
+
+    &__checkbox {
+        width: 25px !important;
+    }
+
+    &__wrap {
+        display: flex;
+        align-items: baseline;
+        span {
+            line-height: 1.35;
+
+            &:first-of-type {
+                margin-right: 15px;
+                font-size: 13px;
+            }
+        }
+    }
+
+    &.checked {
+        border: 2px solid $col-3;
+    }
+}

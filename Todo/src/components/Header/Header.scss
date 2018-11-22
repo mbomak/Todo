@@ -1,0 +1,29 @@
+@import 'styles/_helpers';
+
+.header {
+    padding: 20px 15px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba($col-1, 0.9);
+
+    &__title {
+        font-size: 28px;
+        text-align: center;
+        color: $col-1;
+    }
+}
+
+@media screen and (max-width: $w1) {
+    .header {
+        &__title {
+            font-size: 22px;
+        }
+    }
+}
+
+@media screen and (max-width: $w2) {
+    .header {
+        &__title {
+            font-size: 15px;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+.list-item {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0 5px 10px;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  border: 2px solid transparent;
+  transition: border 0.3s; }
+  .list-item__checkbox {
+    width: 25px !important; }
+  .list-item__wrap {
+    display: flex;
+    align-items: baseline; }
+    .list-item__wrap span {
+      line-height: 1.35; }
+      .list-item__wrap span:first-of-type {
+        margin-right: 15px;
+        font-size: 13px; }
+  .list-item.checked {
+    border: 2px solid rgba(0, 0, 0, 0.3); }
